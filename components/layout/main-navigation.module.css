@@ -1,0 +1,27 @@
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 90vw;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.menu__item {
+  padding: 0 20px;
+}
+
+.menu__link {
+  cursor: pointer;
+}
+
+.menu__link:hover {
+  border-bottom: 2px solid var(--primary-color-light);
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+}

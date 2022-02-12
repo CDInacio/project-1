@@ -1,0 +1,38 @@
+.container {
+  background-color: var(--primary-color-light);
+}
+
+.about {
+  overflow-x: hidden;
+  padding: 3rem 0 3rem 0;
+  width: 90vw;
+  margin: 20rem auto 0 auto;
+  column-gap: 10rem;
+  display: grid;
+  grid-template:
+    "text image" 300px
+    ". image" 400px
+    /1fr 1fr;
+}
+
+.about__text {
+  grid-area: text;
+}
+
+.about__text h1 {
+  margin-bottom: 3rem;
+}
+
+.about__text span {
+  color: var(--text-color-light);
+}
+
+.about__image {
+  grid-area: image;
+}
+
+.about__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
