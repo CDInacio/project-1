@@ -13,12 +13,10 @@ const Home = ({ documents }) => {
         <title>Quitandas da Ana Mares</title>
         <meta title="description" content="quitandas artesanais" />
       </Head>
-
       <MainNavigation />
       <Hero />
-      <Menu />
       <AboutUs />
-      <Products products={documents} />
+      <Products products={documents} />{" "}
     </main>
   );
 };

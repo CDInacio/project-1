@@ -1,5 +1,7 @@
 .image {
-  height: 70vh;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
 }
 
 .section__image {

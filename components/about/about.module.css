@@ -1,17 +1,18 @@
 .container {
   background-color: var(--primary-color-light);
+  height: auto;
 }
 
 .about {
   overflow-x: hidden;
   padding: 3rem 0 3rem 0;
-  width: 90vw;
+  width: 80vw;
   margin: 20rem auto 0 auto;
   column-gap: 10rem;
   display: grid;
   grid-template:
-    "text image" 300px
-    ". image" 400px
+    "text image" 200px
+    ". image" 200px
     /1fr 1fr;
 }
 
