@@ -5,7 +5,8 @@ const AboutUs = () => {
     <div className={classes.container}>
       <section className={classes.about}>
         <div className={classes["about__text"]}>
-          <h1>Sobre nós</h1>
+          <img className={classes["about__icon"]} src="/icon/trigo.png" />
+          <h1>Nossa história</h1>
           <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

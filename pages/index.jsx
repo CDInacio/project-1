@@ -15,8 +15,8 @@ const Home = ({ documents }) => {
       </Head>
       <MainNavigation />
       <Hero />
+      <Products products={documents} />
       <AboutUs />
-      <Products products={documents} />{" "}
     </main>
   );
 };

@@ -3,11 +3,19 @@
   height: auto;
 }
 
+.about__icon {
+  position: absolute;
+  opacity: 0.2;
+  left: -10px;
+}
+
 .about {
+  height: auto;
+  color: #fff;
   overflow-x: hidden;
   padding: 3rem 0 3rem 0;
   width: 80vw;
-  margin: 20rem auto 0 auto;
+  margin: 0 auto 0 auto;
   column-gap: 10rem;
   display: grid;
   grid-template:
@@ -23,10 +31,9 @@
 .about__text h1 {
   margin-bottom: 3rem;
 }
-
+/* 
 .about__text span {
-  color: var(--text-color-light);
-}
+} */
 
 .about__image {
   grid-area: image;

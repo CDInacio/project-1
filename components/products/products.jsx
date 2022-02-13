@@ -1,9 +1,8 @@
 import classes from "./products.module.css";
 
 const Products = ({ products }) => {
-  console.log(products);
   return (
-    <section>
+    <section className={classes.container}>
       {/* <h3 className={classes["section__title"]}>Nossos produtos</h3> */}
       <div className={classes.products}>
         <div className={classes["products__p1"]}>
