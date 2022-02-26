@@ -1,0 +1,32 @@
+.footer__top {
+  width: 100vw;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.footer__fb {
+  cursor: pointer;
+  padding: 0 0.5rem 0 0;
+}
+
+.footer__insta {
+  cursor: pointer;
+  padding: 0 0.5rem 0 0;
+}
+
+.footer__whats {
+  cursor: pointer;
+  padding: 0 1rem 0 0;
+}
+
+.footer__bottom {
+  padding: 0.3rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #f5f5f5;
+  background-color: var(--dark);
+  width: 100vw;
+}

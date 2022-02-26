@@ -1,7 +1,8 @@
 .image {
-  height: calc(100vh - 60px);
+  height: 100vh;
   display: flex;
   justify-content: center;
+  /* position: relative; */
 }
 
 .section__image {
@@ -14,8 +15,32 @@
   height: 100%;
 }
 
+.section__text {
+  color: var(--primary-light);
+  position: absolute;
+  left: 20%;
+  font-weight: lighter;
+  font-style: italic;
+  top: 30%;
+  font-size: 7rem;
+  font-family: "perpetua";
+}
+
 @media (max-width: 600px) {
   .image {
     height: 100vh;
+  }
+  .section__text {
+    font-size: 5rem;
+    top: 23%;
+    left: 19%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 750px) {
+  .section__text {
+    font-size: 6rem;
+    top: 23%;
+    left: 19%;
   }
 }

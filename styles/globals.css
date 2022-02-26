@@ -1,11 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400;500;600;700;800&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: "Hahmlet", serif;
-  color: var(--text-color);
+  background-color: var(--primary-light);
+  color: var(--accent);
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "perpetua";
+  src: url("/fonts/perpetua.ttf");
 }
 
 a {
@@ -25,8 +32,8 @@ ul {
 }
 
 :root {
-  --primary-color: #bc6c25;
-  --primary-color-light: #d77f33;
-  --text-color: #141414;
-  --text-color-light: #333333;
+  --primary: #aa6122;
+  --primary-light: #eae2b7;
+  --accent: #301b09;
+  --dark: #141414;
 }

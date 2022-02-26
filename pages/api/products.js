@@ -13,7 +13,6 @@ const handler = async (request, response) => {
     response.status(422).json({ message: "Produtos não encontrados" });
     return;
   }
-  console.log(products);
   client.close();
   response.status(200).json(products);
 };

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import classes from "./about.module.css";
 
 const AboutUs = () => {
@@ -5,9 +7,8 @@ const AboutUs = () => {
     <div className={classes.container}>
       <section className={classes.about}>
         <div className={classes["about__text"]}>
-          <img className={classes["about__icon"]} src="/icon/trigo.png" />
-          <h1>Nossa história</h1>
-          <span>
+          <h1>NOSSA HISTÓRIA</h1>
+          <span id="about">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -17,8 +18,8 @@ const AboutUs = () => {
             culpa qui officia deserunt mollit anim id est laborum
           </span>
         </div>
-        <div className={classes["about__image"]}>
-          <img src="/images/about2.jpg" />
+        <div className={classes["about__icon"]}>
+          <Image width="200px" height="400px" alt='about' src="/icon/trigo.png" />
         </div>
       </section>
     </div>

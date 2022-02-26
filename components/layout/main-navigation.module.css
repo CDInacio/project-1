@@ -1,11 +1,12 @@
 .menu {
+  position: absolute;
+  margin: 2% 0 0 10%;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-
+  color: var(--primary);
+  font-family: "perpetua";
+  font-size: 1.3rem;
   width: 80vw;
-  margin: 0 auto;
-  height: 60px;
 }
 
 .menu__item {
@@ -20,8 +21,66 @@
   border-bottom: 2px solid var(--primary-color-light);
 }
 
+.menu__sidenavbtn {
+  display: none;
+}
+
+.menu__sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(170, 97, 34, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.menu__sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--primary-light);
+  display: block;
+  transition: 0.3s;
+}
+
+.menu__sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.menu__sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.menu__close {
+  background-color: red;
+  margin-left: 20px;
+}
+
 @media (max-width: 900px) {
   .menu {
     display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu__sidenavbtn {
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 2%;
   }
 }

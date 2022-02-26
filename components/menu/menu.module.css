@@ -7,9 +7,19 @@
   top: 70%;
 
   border-radius: 0.4rem;
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   padding: 0.5rem;
   display: flex;
+
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.menu h2 {
+  font-weight: bold;
+}
+
+.menu p {
+  font-weight: 300;
 }
 
 .menu__icon {
@@ -55,7 +65,7 @@
   .menu {
     display: flex;
     flex-direction: column;
-    top: 50%;
+    top: 60%;
   }
 
   .menu__item1 {
@@ -66,5 +76,11 @@
   .menu__item2 {
     border-right: none;
     border-bottom: 1px solid #fff;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 980px) {
+  .menu {
+    top: 61%;
   }
 }
